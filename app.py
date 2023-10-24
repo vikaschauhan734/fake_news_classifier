@@ -41,7 +41,7 @@ def submit():
         # Joining all remaining words
         text = " ".join(text)
         
-        vectorized = vectorizer.transform(text).reshape(1, -1)
+        vectorized = vectorizer.transform([text])
 
         prediction = model.predict(vectorized)[0]
         output = ""
