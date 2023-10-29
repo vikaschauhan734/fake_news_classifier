@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
 import numpy as np
-import requests
 import pickle
 import re
 from nltk.corpus import stopwords
